@@ -15,14 +15,14 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitmqConfig {
 
     /**
-     * @Description 动态创建队列并监听
-     * @Date  2025/3/9
-     * @Param [org.springframework.amqp.rabbit.connection.ConnectionFactory]
      * @return org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer
+     * @Description 动态创建队列并监听
+     * @Date 2025/3/9
+     * @Param [org.springframework.amqp.rabbit.connection.ConnectionFactory]
      * @Author Charlie
      **/
     @Bean
-    public SimpleMessageListenerContainer messageListenerContainer(ConnectionFactory connectionFactory){
+    public SimpleMessageListenerContainer messageListenerContainer(ConnectionFactory connectionFactory) {
         SimpleMessageListenerContainer container = new SimpleMessageListenerContainer(connectionFactory);
         return container;
     }

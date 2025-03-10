@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import static org.charlie.position.infrastructure.enums.RabbitInfoEnum.RPC_CLIENT_UNICAST;
-import static org.charlie.position.infrastructure.utils.Common.getHostName;
+import static org.charlie.position.infrastructure.utils.HostNameUtil.getHostName;
 
 /**
  * @author mah
